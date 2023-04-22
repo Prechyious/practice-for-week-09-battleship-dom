@@ -1,0 +1,30 @@
+/* Your code here */
+
+h1,
+h2 {
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-content: center;
+
+    max-width: 600px;
+    min-height: 500px;
+    gap: 2px;
+    margin-inline: auto;
+}
+
+#board > div {
+    border: 2px solid grey;
+}
+
+button {
+    padding: 5px 10px;
+    margin-bottom: 1em;
+    margin-inline: auto;
+    display: flex;
+    cursor: pointer;
+}
